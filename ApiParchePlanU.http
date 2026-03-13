@@ -1,0 +1,6 @@
+@ApiParchePlanU_HostAddress = http://localhost:5047
+
+GET {{ApiParchePlanU_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
