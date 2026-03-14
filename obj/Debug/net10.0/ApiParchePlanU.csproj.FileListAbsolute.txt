@@ -1,0 +1,9 @@
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.csproj.AssemblyReference.cache
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.AssemblyInfoInputs.cache
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.AssemblyInfo.cs
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.csproj.CoreCompileInputs.cache
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\migue\source\repos\ApiParchePlanU\ApiParchePlanU\obj\Debug\net10.0\ApiParchePlanU.sourcelink.json
