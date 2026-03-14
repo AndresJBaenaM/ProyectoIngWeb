@@ -5,7 +5,7 @@
         public int Id { get; set; }
         public string Lugar { get; set; }
         public DateTime Time { get; set; }
-        public int PlanId { get; set; }
-        public ICollection<Vote> Votes { get; set; }
+        public int Plan_Id { get; set; }
+        public Plan plan { get; set; }
     }
 }

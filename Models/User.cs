@@ -1,10 +1,9 @@
-﻿namespace ApiParchePlanU.Models
+﻿using Microsoft.AspNetCore.Identity
+namespace ApiParchePlanU.Models
 {
-    public class User
+    public class User : IdentityUser
     {
-        public string Id { get; set; }
         public string NombreCompleto { get; set; }
-        public string email { get; set; }
         public string Programa  { get; set; }
         public string AvatarUrl { get; set; }
 

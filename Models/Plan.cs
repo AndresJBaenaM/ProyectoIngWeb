@@ -1,4 +1,6 @@
-﻿namespace ApiParchePlanU.Models
+﻿using ApiParchePlanU.Models.Enums;
+
+namespace ApiParchePlanU.Models
 {
     public class Plan
     {
@@ -9,6 +11,9 @@
         public DateTime EndVoting { get; set; }
         public PlanState State { get; set; }
         public int Parche_Id { get; set; }
-        public ICollection<PlanOption> Options { get; set; }
+        public Parche parche { get; set; }
+        public List<PlanOption> Options {  get; set; }
+        public List<Attendance> Attendances { get; set; }
+        public List<Vote> Votes { get; set; }
     }
 }
