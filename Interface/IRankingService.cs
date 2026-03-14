@@ -2,5 +2,6 @@
 {
     public interface IRankingService
     {
+        Task<object> GetRanking(int planId); 
     }
 }

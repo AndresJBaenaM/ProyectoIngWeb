@@ -1,6 +1,24 @@
-﻿namespace ApiParchePlanU.Service
+﻿using ApiParchePlanU.Interface;
+
+namespace ApiParchePlanU.Service
 {
-    public class RankingService
+    public class RankingService : IRankingService
     {
+        private readonly ApplicationDbContext _context;
+        public RankingService()
+        {
+            _context = context; 
+        }
+        public async Task<object> GetRanking(int parcheId)
+        {
+            var ranking = await _context.Plans
+                .Where(parcheId => parcheId.ParcheId == parcheId)
+                .GroupBy(p => p.ParcheId)
+                .Select(g => new
+                {
+                    TotalPlans = g.coutn()
+                }).FirstOrDefault();
+            return ranking; 
+        }
     }
 }
