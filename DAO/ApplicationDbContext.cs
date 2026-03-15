@@ -20,6 +20,6 @@ namespace ApiParchePlanU.DAO
         public DbSet<Vote> Votes { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
         public DbSet<PlanOption> PlanOptions { get; set; }
-
+        public DbSet<Ranking> Rankings {  get; set; }
     }
 }

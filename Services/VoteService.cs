@@ -1,9 +1,10 @@
 ﻿using ApiParchePlanU.DAO;
+using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
 
 namespace ApiParchePlanU.Services
 {
-    public class VoteService
+    public class VoteService : IVoteService
     {
         private readonly ApplicationDbContext _context;
         public VoteService(ApplicationDbContext context)

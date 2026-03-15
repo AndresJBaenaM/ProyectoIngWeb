@@ -1,10 +1,11 @@
 ﻿using ApiParchePlanU.DAO;
+using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiParchePlanU.Services
 {
-    public class ParcheService
+    public class ParcheService : IParcheService
     {
         public readonly ApplicationDbContext _context; 
 

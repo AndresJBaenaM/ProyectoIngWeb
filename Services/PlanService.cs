@@ -1,11 +1,12 @@
 ﻿using ApiParchePlanU.DAO;
+using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
 using ApiParchePlanU.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiParchePlanU.Services
 {
-    public class PlanService
+    public class PlanService : IPlanService
     {
         public readonly ApplicationDbContext _context; 
         public PlanService(ApplicationDbContext context)

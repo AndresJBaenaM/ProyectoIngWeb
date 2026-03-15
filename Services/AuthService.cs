@@ -1,4 +1,4 @@
-﻿using ApiParchePlanU.Interface;
+﻿using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;

@@ -1,7 +1,6 @@
-﻿using ApiParchePlanU.Interface;
+﻿using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
 using ApiParchePlanU.DAO;
-using ApiParchePlanU.Interfaces;
 
 namespace ApiParchePlanU.Services
 {
@@ -13,7 +12,7 @@ namespace ApiParchePlanU.Services
         {
             _context = context;
         }
-        public async Task ConfirAttendande(string userId, int planId, string status)
+        public async Task ConfirmAttendande(string userId, int planId, string status)
         {
             var attendance = new Attendance
             {
@@ -21,12 +20,12 @@ namespace ApiParchePlanU.Services
                 PlanId = planId,
                 Status = status,
             };
-            _context.Attendance.Add(attendance); 
+            _context.Attendances.Add(attendance); 
             await _context.SaveChangesAsync();
         }
         public async Task<List<Attendance>> GetAttendances(int planId)
         {
-            return await _context.Attendance
+            return await _context.Attendances
                 .Where(a=> a.PlanId == planId)
                 .ToListAsync();
         }
