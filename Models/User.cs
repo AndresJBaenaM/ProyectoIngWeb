@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity
+﻿using Microsoft.AspNetCore.Identity; 
 namespace ApiParchePlanU.Models
 {
     public class User : IdentityUser

@@ -17,7 +17,7 @@ namespace ApiParchePlanU.Services
         {
             var attendance = new Attendance
             {
-                UserId = userId,
+                User_Id = userId,
                 PlanId = planId,
                 Status = status,
             };
