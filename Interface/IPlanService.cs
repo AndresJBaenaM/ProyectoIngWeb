@@ -1,7 +1,7 @@
 ﻿using ApiParchePlanU.Models;
 using ApiParchePlanU.Models.Enums;
 
-namespace ApiParchePlanU.Interface
+namespace ApiParchePlanU.Interfaces
 {
     public interface IPlanService
     {

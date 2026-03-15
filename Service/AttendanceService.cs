@@ -1,8 +1,9 @@
 ﻿using ApiParchePlanU.Interface;
 using ApiParchePlanU.Models;
-using ApiParchePlanU.DAO; 
+using ApiParchePlanU.DAO;
+using ApiParchePlanU.Interfaces;
 
-namespace ApiParchePlanU.Service
+namespace ApiParchePlanU.Services
 {
     public class AttendanceService : IAttendanceService
     {

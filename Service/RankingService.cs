@@ -1,7 +1,7 @@
 ﻿using ApiParchePlanU.DAO;
 using ApiParchePlanU.Interface;
 
-namespace ApiParchePlanU.Service
+namespace ApiParchePlanU.Services
 {
     public class RankingService : IRankingService
     {

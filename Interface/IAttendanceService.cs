@@ -1,6 +1,6 @@
 ﻿using ApiParchePlanU.Models;
 
-namespace ApiParchePlanU.Interface
+namespace ApiParchePlanU.Interfaces
 {
     public interface IAttendanceService
     {

@@ -1,4 +1,4 @@
-﻿namespace ApiParchePlanU.Interface
+﻿namespace ApiParchePlanU.Interfaces
 {
     public interface IVoteService
     {

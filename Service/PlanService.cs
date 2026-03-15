@@ -3,7 +3,7 @@ using ApiParchePlanU.Models;
 using ApiParchePlanU.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiParchePlanU.Service
+namespace ApiParchePlanU.Services
 {
     public class PlanService
     {

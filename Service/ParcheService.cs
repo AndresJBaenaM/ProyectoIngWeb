@@ -2,7 +2,7 @@
 using ApiParchePlanU.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiParchePlanU.Service
+namespace ApiParchePlanU.Services
 {
     public class ParcheService
     {

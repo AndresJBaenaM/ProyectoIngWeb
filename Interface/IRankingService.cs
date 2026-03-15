@@ -1,6 +1,6 @@
 ﻿namespace ApiParchePlanU.Interface
 {
-    public interface IRankingService
+    public interface IRankingServices
     {
         Task<object> GetRanking(int planId); 
     }

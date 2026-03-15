@@ -1,7 +1,7 @@
 ﻿using ApiParchePlanU.DAO;
 using ApiParchePlanU.Models;
 
-namespace ApiParchePlanU.Service
+namespace ApiParchePlanU.Services
 {
     public class VoteService
     {
