@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiParchePlanU.DAO
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         //Constructor que recibe las opciones de conexión a la bd para tener contexto de esta
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
