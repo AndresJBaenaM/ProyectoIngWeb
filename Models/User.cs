@@ -5,7 +5,7 @@ namespace ApiParchePlanU.Models
     {
         public string NombreCompleto { get; set; }
         public string Programa  { get; set; }
-        public string AvatarUrl { get; set; }
+        public string? AvatarUrl { get; set; }
 
     }
 }
