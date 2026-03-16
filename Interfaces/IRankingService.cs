@@ -2,7 +2,7 @@
 
 namespace ApiParchePlanU.Interfaces
 {
-    public interface IRankingServices
+    public interface IRankingService
     {
         Task<List<Ranking>> GetRanking(int parcheId); 
     }

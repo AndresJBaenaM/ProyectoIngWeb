@@ -5,6 +5,6 @@
         public string UserId { get; set; }
         public int ParcheId { get; set; }
         public int OrganizerScore { get; set; }
-        public int GhosScore { get; set; }
+        public int GhostScore { get; set; }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\migue\\source\\repos\\ApiParchePlanU\\ApiParchePlanU\\ApiParchePlanU.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\EIA\\Asignaturas2026_1\\Ingeniería_Web\\ParchePlanU\\ApiParchePlanU.csproj": {}
   },
   "projects": {
-    "C:\\Users\\migue\\source\\repos\\ApiParchePlanU\\ApiParchePlanU\\ApiParchePlanU.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\EIA\\Asignaturas2026_1\\Ingeniería_Web\\ParchePlanU\\ApiParchePlanU.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\migue\\source\\repos\\ApiParchePlanU\\ApiParchePlanU\\ApiParchePlanU.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\EIA\\Asignaturas2026_1\\Ingeniería_Web\\ParchePlanU\\ApiParchePlanU.csproj",
         "projectName": "ApiParchePlanU",
-        "projectPath": "C:\\Users\\migue\\source\\repos\\ApiParchePlanU\\ApiParchePlanU\\ApiParchePlanU.csproj",
-        "packagesPath": "C:\\Users\\migue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\migue\\source\\repos\\ApiParchePlanU\\ApiParchePlanU\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\EIA\\Asignaturas2026_1\\Ingeniería_Web\\ParchePlanU\\ApiParchePlanU.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\EIA\\Asignaturas2026_1\\Ingeniería_Web\\ParchePlanU\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\migue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
