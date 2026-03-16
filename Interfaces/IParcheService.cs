@@ -4,10 +4,10 @@ namespace ApiParchePlanU.Interfaces
 {
     public interface IParcheService
     {
-        Task<List<Parche>> GettAll(); 
-        Task<Parche> GettById(int id);
+        Task<List<Parche>> GetAll(); 
+        Task<Parche> GetById(int id);
         Task<Parche> Create(Parche parche);
-        Task JoinParche(string inviteCode, string userId);
+        Task JoinParche(string userId, string inviteCode);
         Task<List<ParcheMember>> GetMembers(int parcheId); 
     }
 }

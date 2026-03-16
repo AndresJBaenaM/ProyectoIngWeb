@@ -2,6 +2,7 @@
 using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
 using Microsoft.EntityFrameworkCore;
+using ApiParchePlanU.Models.Enums;
 
 namespace ApiParchePlanU.Services
 {
@@ -37,7 +38,7 @@ namespace ApiParchePlanU.Services
             {
                 Id_Usuario = userId,
                 Parche_Id = parche.Id,
-                role = "Member"
+                Role = ParcheRole.Member
             }; 
             _context.ParcheMembers.Add(member);
             await _context.SaveChangesAsync();
