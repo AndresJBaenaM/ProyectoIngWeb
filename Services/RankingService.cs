@@ -1,6 +1,7 @@
 ﻿using ApiParchePlanU.DAO;
 using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
+using ApiParchePlanU.Models.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiParchePlanU.Services
@@ -14,7 +15,26 @@ namespace ApiParchePlanU.Services
         }
         public async Task<List<Ranking>> GetRanking(int parcheId)
         {
-            return await _context.Rankings.Where(r => r.ParcheId == parcheId).ToListAsync();  
+            var members = await _context.ParcheMembers.Where(m => m.Parche_Id == parcheId).ToListAsync(); 
+            var rankingList = new List<Ranking>();
+
+            foreach(var member in members)
+            {
+                var organizerScore = await _context.Plans.Where(p => p.CratorId == member.Id_Usuario && p.Parche_Id == parcheId).CountAsync();
+
+                var ghostScore = await _context.Attendances.Where(a => a.User_Id == member.Id_Usuario && a.Status == AttendanceStatus.Yes).CountAsync();
+
+
+                rankingList.Add(new Ranking
+                {
+                    UserId = member.Id_Usuario,
+                    ParcheId = parcheId,
+                    OrganizerScore = organizerScore,
+                    GhosScore = ghostScore
+
+                }); 
+            }
+            return rankingList;
         }
     }
 }

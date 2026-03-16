@@ -7,6 +7,7 @@ namespace ApiParchePlanU.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+        public string CratorId {  get; set; }
         public DateTime StartVoting {  get; set; }
         public DateTime EndVoting { get; set; }
         public PlanState State { get; set; }

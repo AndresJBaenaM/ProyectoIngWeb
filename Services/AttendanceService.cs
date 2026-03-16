@@ -1,6 +1,8 @@
 ﻿using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
 using ApiParchePlanU.DAO;
+using ApiParchePlanU.Models.Enums;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiParchePlanU.Services
 {
@@ -18,7 +20,7 @@ namespace ApiParchePlanU.Services
             {
                 User_Id = userId,
                 PlanId = planId,
-                Status = status,
+                Status = Enum.Parse<AttendanceStatus>(status)
             };
             _context.Attendances.Add(attendance); 
             await _context.SaveChangesAsync();

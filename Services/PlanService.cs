@@ -28,7 +28,7 @@ namespace ApiParchePlanU.Services
             await _context.SaveChangesAsync();
             return plan; 
         }
-        public async Task ChangeSate(int planId, PlanSate neaPlanSate)
+        public async Task ChangeState(int planId, PlanState newState)
         {
             var plan = await _context.Plans.FindAsync(planId);
             plan.State = newState;

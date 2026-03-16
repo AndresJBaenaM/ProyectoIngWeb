@@ -1,6 +1,7 @@
 ﻿using ApiParchePlanU.DAO;
 using ApiParchePlanU.Interfaces;
 using ApiParchePlanU.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiParchePlanU.Services
 {
@@ -15,16 +16,19 @@ namespace ApiParchePlanU.Services
         {
             var vote = new Vote
             {
-                userId = userId,
-                PlanOption = optionId
+                Usuario_Id = userId,
+                PlanOptionId = optionId
             };
-            await _context.SaveChangeAsync();
+            _context.Votes.Add(vote);
+            await _context.SaveChangesAsync();
         }
         public async Task ChangeVote(string userId, int optionId)
         {
-            var vote = await _context.Votes
-                .FirtOrDefautl(vote => vote.UserId == userId);
-            vote.PlanOption = optionId;
+            var vote = await _context.Votes.FirstOrDefaultAsync(vote => vote.Usuario_Id == userId);
+            if (vote == null)
+                return; 
+            
+            vote.PlanOptionId = optionId;
             await _context.SaveChangesAsync();
         }
     }
