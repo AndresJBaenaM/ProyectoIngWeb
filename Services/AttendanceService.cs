@@ -14,7 +14,7 @@ namespace ApiParchePlanU.Services
         {
             _context = context;
         }
-        public async Task ConfirmAttendande(string userId, int planId, string status)
+        public async Task ConfirmAttendance(string userId, int planId, string status)
         {
             var attendance = new Attendance
             {
@@ -27,9 +27,7 @@ namespace ApiParchePlanU.Services
         }
         public async Task<List<Attendance>> GetAttendances(int planId)
         {
-            return await _context.Attendances
-                .Where(a=> a.PlanId == planId)
-                .ToListAsync();
+            return await _context.Attendances.Where(a=> a.PlanId == planId).ToListAsync();
         }
     }
 }
