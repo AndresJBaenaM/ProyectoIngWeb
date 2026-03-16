@@ -25,27 +25,17 @@ namespace ApiParchePlanU.Services
             _configuration = configuration;
         }
 
-        public async Task<IdentityResult> Register(string email, string password, string role)
+        public async Task<IdentityResult> Register(string fullName, string email, string programa, string password, string URLAvatar)
         {
             var user = new User
             {
-                UserName = email,
-                Email = email
+                UserName = fullName,
+                Email = email,
+                Programa = programa,
+                AvatarUrl = URLAvatar
             };
 
             var result = await _userManager.CreateAsync(user, password);
-
-            if (result.Succeeded)
-            {
-                //Verificamos si el rol existe
-                if (!await _roleManager.RoleExistsAsync(role))
-                {
-                    await _roleManager.CreateAsync(new IdentityRole(role));
-                }
-
-                //Asignamos el rol al usuario
-                await _userManager.AddToRoleAsync(user, role);
-            }
 
             return result;
         }

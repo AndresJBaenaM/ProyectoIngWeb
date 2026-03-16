@@ -59,7 +59,7 @@ builder.Services.AddScoped<IParcheService, ParcheService>();
 builder.Services.AddScoped<IPlanService, PlanService>();
 builder.Services.AddScoped<IVoteService, VoteService>();
 builder.Services.AddScoped<IAttendanceService, AttendanceService>();
-builder.Services.AddScoped<IRankingServices, RankingService>();
+builder.Services.AddScoped<IRankingService, RankingService>();
 
 
 //Auth service

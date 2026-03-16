@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiParchePlanU")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4537ad3c2edbf98e73cc4229865ee31d0ffa0fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+767eee221dc5192f0ca83a3a16017db52b5a2fde")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiParchePlanU")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiParchePlanU")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
